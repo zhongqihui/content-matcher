@@ -23,7 +23,6 @@ public class PatternTest1 {
         String regex = "\\$\\{[^}]*}";
         String temp = tempContent.replaceAll(regex, ".*");
         boolean matches = Pattern.matches(temp, msg);
-        //System.out.println("是否匹配：" + matches);
         return matches;
     }
 }
